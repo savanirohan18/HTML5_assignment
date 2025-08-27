@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        background-color:skyblue;
+      }
+      h1{
+        text-align: center;
+        border:2px solid black ;
+      }
+    </style>
+    
+</head>
+<body>
+    <h1>Audio</h1>
+    <center><audio src="./Rasraj Ji Maharaj - Lo-fi Version श्री हनुमान चालीसा { Slowed & Reverb } Shree Hanuman Chalisa.mp3" controls></audio></center><br>
+    <h1>video</h1>
+    <center><video src="./ssvid.net---WAJAH-TUM-HO-FULL-SONG-WITH-LYRICS-HATE-STORY-3_v720P.mp4" controls height="500px" width="500px"></video><br></center>
+
+    <h1>canvas</h1>
+    <center><canvas id="myCanvas" width="300" height="200"></canvas>
+
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.arc(150, 100, 70, 0, 2 * Math.PI, false);
+            context.stroke();
+        };
+    </script></center><br>
+
+    <h1>svg</h1>    
+    <center><svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+        <svg width="400" height="120">
+      <rect x="30" y="10" width="200" height="100" stroke="red" stroke-width="9" fill="blue" />
+    </svg></center>
+
+        
+</body>
+</html>
